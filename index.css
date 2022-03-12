@@ -1,0 +1,39 @@
+
+.bathback{
+    position: fixed;
+    top: 0px;
+    bottom:0px;
+    left: -1px;
+    right: -1px;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+}
+
+.text-container{
+    position:absolute;
+    text-align: center;
+    top: 50%;
+    left: 25%;
+    right: 25%;    
+}
+
+.text{
+    position: relative;
+    font: 25px Arial, sans-serif;
+    z-index: 1;
+    animation: spin 2s linear infinite;
+}
+
+
+@keyframes spin{
+    25% {
+        color: red;
+    }
+    
+    75% {
+        color: blue;
+    }
+}
